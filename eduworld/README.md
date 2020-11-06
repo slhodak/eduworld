@@ -1,9 +1,14 @@
-## Visualizations of education-related data.
+## Explore education-related data
+![front page](../images/frontpage.png)
+## Visit
+`http://34.219.243.164:3000/`
 
+---
+
+## Development
 ### Setup
 1. `cd src/server && npm install && npm run start`
 2. `localhost:3000`
-3. Live at `http://34.219.243.164:3000/`
 
 ### Add Charts
 1. Add chart html file to `src` named for the new element
