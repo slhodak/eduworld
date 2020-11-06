@@ -9,7 +9,7 @@ import mpld3
 df = pd.read_csv('../data/table-1-1-mf.csv')
 grouped = df.set_index('Age Group')
 sns.set_theme(style='ticks')
-plot = sns.relplot(data=grouped, height=5, aspect=2)
+plot = sns.relplot(data=grouped, height=4, aspect=2)
 figure = plot.fig
 
 html_str = mpld3.fig_to_html(figure)
