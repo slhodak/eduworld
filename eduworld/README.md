@@ -1,7 +1,7 @@
 ## Explore education-related data
 ![front page](../images/frontpage.png)
 ## Visit
-`http://34.219.243.164:3000/`
+[Website](http://34.219.243.164:3000/)
 
 ---
 
