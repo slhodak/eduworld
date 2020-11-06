@@ -1,0 +1,3 @@
+State education spending choropleth
+  Display spending per pupil, not absolute number
+  Add legend
