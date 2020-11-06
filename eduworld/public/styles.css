@@ -4,6 +4,10 @@ html {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif ;
 }
 
+a:visited {
+  color: blue;
+}
+
 body {
   margin: 0;
 }
@@ -18,4 +22,15 @@ body {
   width: 100%;
   text-align: center;
   border-bottom: 1px solid black;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.citation:hover {
+  transition: 200ms;
+  background-color: lightgray;
 }
