@@ -1,6 +1,6 @@
 # Must be run from containing folder
 
-elements = ['attainment', 'header']
+elements = ['attainment', 'header', 'spending2018']
 html_snippets = {}
 
 html_path = 'src/html'
@@ -15,7 +15,8 @@ for element in elements:
   file.close()
 
 index = template.format(attainment=html_snippets['attainment'],
-                        header=html_snippets['header'])
+                        header=html_snippets['header'],
+                        spending2018=html_snippets['spending2018'])
 
 index_file = open('public/index.html','w')
 index_file.write(index)

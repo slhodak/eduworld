@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import mpld3
 
-df = pd.read_csv('../data/table-1-1-mf.csv')
+df = pd.read_csv('../data/attainment2019/table-1-1-mf.csv')
 grouped = df.set_index('Age Group')
 sns.set_theme(style='ticks')
 plot = sns.relplot(data=grouped, height=4, aspect=2)
