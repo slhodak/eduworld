@@ -16,8 +16,9 @@
 2. Pandas for data manipulation for attainment chart
 3. 2nd chart
 ### Server
-1. Environment variables for file paths used by various scripts
-2. Create server
+1. Environment variables for file paths used by various scripts (rising priority)
+2. Unpackage and startup script.
+    a. Linux packaging convention to follow?
 ### Front-End
 1. Footer inviting contributors
 2. Do not refactor chart sub-template w/citation. Do this way until you __need__ a solution.
