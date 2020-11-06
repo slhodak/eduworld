@@ -1,8 +1,9 @@
 ## Visualizations of education-related data.
 
 ### Setup
-1. `python3 render.py`
-2. Navigate to `public/index.html`
+1. `cd src/server && npm install && npm run start`
+2. `localhost:3000`
+3. Live at `http://34.219.243.164:3000/`
 
 ### Add Charts
 1. Add chart html file to `src` named for the new element
