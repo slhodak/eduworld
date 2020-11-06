@@ -1,2 +1,2 @@
 ### Educational Stat Visualization
-Folders contain additional READMEs
+The core project is in `eduworld/`, the rest of the folders are learning sandboxes.
