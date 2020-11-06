@@ -1,3 +1,10 @@
 State education spending choropleth
   Display spending per pupil, not absolute number
   Add legend
+  Size wrong; distorted
+
+chart titles too small
+
+automate citation text grab? data storage will get messy
+  format data+metadata for automated display. titles, citations
+  
