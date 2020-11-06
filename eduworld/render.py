@@ -1,13 +1,16 @@
+# Must be run from containing folder
+
 elements = ['attainment', 'header']
 html_snippets = {}
 
-template_file = open('src/template.html','r')
+html_path = 'src/html'
+
+template_file = open(f'{html_path}/template.html','r')
 template = template_file.read()
 template_file.close()
 
-
 for element in elements:
-  file = open(f'src/{element}.html')
+  file = open(f'{html_path}/{element}.html')
   html_snippets[element] = file.read()
   file.close()
 
