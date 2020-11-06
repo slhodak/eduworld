@@ -1,5 +1,3 @@
-
-
 ## Visualizations of education-related data.
 ---
 ### Updating the page elements
@@ -9,11 +7,13 @@
 3. In `render.py`, add the element name and its lookup in `html_snippets` to the arguments of `template.format()`
 
 
-## To-do, Plots
+## To-do
 ### Plots
 1. Key and clarity of Attainment chart
-2. 2nd chart
+2. Chart cut off?
+3. 2nd chart
 ### Server
 1. Environment variables for file paths used by various scripts
 ### Front-End
 1. Header design
+2. Citations
