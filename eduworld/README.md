@@ -20,4 +20,4 @@
 2. Create server
 ### Front-End
 1. Footer inviting contributors
-2. Citations
+2. Do not refactor chart sub-template w/citation. Do this way until you __need__ a solution.
