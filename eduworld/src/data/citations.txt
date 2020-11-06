@@ -1,0 +1,2 @@
+attainment2019: https://www.census.gov/data/tables/2019/demo/educational-attainment/cps-detailed-tables.html
+spending2018: https://www.census.gov/programs-surveys/school-finances.html
