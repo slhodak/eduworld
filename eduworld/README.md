@@ -12,12 +12,12 @@
 
 ## To-do
 ### Plots
-1. Key and clarity of Attainment chart
-2. Chart cut off?
+1. Hover show values (attainment)
+2. Pandas for data manipulation for attainment chart
 3. 2nd chart
 ### Server
 1. Environment variables for file paths used by various scripts
 2. Create server
 ### Front-End
-1. Header design
+1. Footer inviting contributors
 2. Citations
