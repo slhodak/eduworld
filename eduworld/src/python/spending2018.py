@@ -3,34 +3,49 @@ from bokeh.plotting import figure, save, output_file
 import pandas as pd
 import math
 
-output_file('/home/sam/Documents/Projects/Software/eduworld/eduworld/src/html/spending.html')
+output_file('../html/spending.html')
 
 us_states = us_states.data.copy()
 
 del us_states["HI"]
 del us_states["AK"]
+del us_states["DC"]
 
 state_xs = [us_states[code]["lons"] for code in us_states]
 state_ys = [us_states[code]["lats"] for code in us_states]
 
-colors = ["#754beb", "#8b4beb", "#a04beb", "#cb4beb", "#e64beb", "#eb4bd6", "#eb4bb6", "#eb4b9e", "#eb4b78", "#eb4b4b" ]
-state_colors = []
+colors = ["#66faff", "#66bfff", "#6669ff", "#8f66ff", "#ab66ff", "#e566ff", "#ff66e8", "#ff66b3", "#ff668f", "#ff6666" ]
 
-spendingdf = pd.read_csv('/home/sam/Documents/Projects/Software/eduworld/eduworld/src/data/spending2018/2018_spending_by_state_elementary_secondary.csv')
+spendingdf = pd.read_csv('/home/sam/Documents/Projects/Software/eduworld/eduworld/src/data/spending2018/2018_states_edu_gdp.csv')
 
-maximum = spendingdf.Total.max()
+# To calculate edu spending-to-gdp ratio
+def gdp_proportion(state):
+    gdp = spendingdf.loc[spendingdf.State == state, 'GDP'].values[0] * 1000
+    spending = spendingdf.loc[spendingdf.State == state, 'Education Spending'].values[0]
+    return spending / gdp
 
-def of_max(state):
-  return math.floor((spendingdf.loc[spendingdf.State == state, 'Total']/maximum) * 10)
-
+ratios = []
 for state in us_states:
-  try:
-    idx = of_max(state) - 1
-    state_colors.append(colors[idx])
-  except KeyError:
-    state_colors.append("white")
+    try:
+        idx = gdp_proportion(state)
+        ratios.append(idx)
+    except KeyError:
+        next
 
-p = figure(title="US Primary-Secondary Education Spending 2018", plot_width=900, plot_height=700)
-p.patches(state_xs, state_ys, fill_color=state_colors, fill_alpha=0.7,line_color="black")
+# Scale ratios to get widest range of colors
+oldMax = max(ratios)
+oldMin = min(ratios)
+oldRange = oldMax - oldMin
+def scaled_index(oldValue):
+    return math.floor((oldValue - oldMin) / oldRange * 9)
+
+state_colors = []
+for ratio in ratios:
+    state_colors.append(colors[scaled_index(ratio)])
+
+height = 450
+width = 650
+p = figure(title="US Primary-Secondary Education Spending 2018", plot_width=width, plot_height=height)
+p.patches(state_xs, state_ys, fill_color=state_colors, fill_alpha=0.7, line_color="black")
 
 save(p)
