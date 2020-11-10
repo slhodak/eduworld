@@ -8,3 +8,5 @@ chart titles too small
 automate citation text grab? data storage will get messy
   format data+metadata for automated display. titles, citations
   
+debug gdp_proportion
+scale because nobody spends more than 20% of gdp on education
