@@ -31,7 +31,11 @@ body {
   margin: 20px;
 }
 
-.citation:hover {
+.citation {
+  font-size: 10pt;
+}
+
+.citation a:hover {
   transition: 200ms;
   background-color: lightgray;
 }
