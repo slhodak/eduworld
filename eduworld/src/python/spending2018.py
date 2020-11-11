@@ -45,7 +45,7 @@ for ratio in ratios:
 
 height = 450
 width = 650
-p = figure(title="US Primary-Secondary Education Spending 2018", plot_width=width, plot_height=height)
+p = figure(title="Primary-Secondary Education Spending as a Proportion of GDP (USA, 2018)", plot_width=width, plot_height=height)
 p.patches(state_xs, state_ys, fill_color=state_colors, fill_alpha=0.7, line_color="black")
 
 save(p)
