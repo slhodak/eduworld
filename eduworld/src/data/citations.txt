@@ -1,3 +1,5 @@
 attainment2019: https://www.census.gov/data/tables/2019/demo/educational-attainment/cps-detailed-tables.html
 spending2018: https://www.census.gov/programs-surveys/school-finances.html
 enrollment2017: https://nces.ed.gov/programs/digest/d19/tables/dt19_203.10.asp
+spending_per_pupil_by_state: https://nces.ed.gov/programs/digest/d19/tables/dt19_236.65.asp
+annual_salary_of_teacher_by_state: https://nces.ed.gov/programs/digest/d19/tables/dt19_211.60.asp?current=yes
