@@ -1,0 +1,33 @@
+numpy arrays have 1 dtype for an entire array, pandas DataFrames have one dtype per column
+
+DataFrame from numPy array, datetime index, and labeled columns
+  Index: dat struc w/column, dtype, freq(?)
+  index: row labels (aka axis labels)
+    ordered, sliceable
+
+
+        feature   feature
+row     value     value
+row     values    value
+
+
+Transposing data
+  df.T or df.transpose()
+  switch x and y axes
+  "reflect over main diagonal"
+
+[col, col] returns multiple columns
+[idx:idx] slices the rows in range
+  use row nums or index values
+
+df.iat and df.at faster than df.iloc and df.loc
+
+why is df[df['A'] > 0] called 'boolean indexing'?
+  return rows where expr is true
+
+df[df > 0] means "df where value is greater than 0"
+  Gives NaN where row feature value fails condition  
+df[df['A'] > 0] means "df where col 'A' is greater than 0"
+
+
+
