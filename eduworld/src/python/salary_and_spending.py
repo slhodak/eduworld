@@ -38,7 +38,7 @@ p.title.text_font_size='16pt'
 labels = LabelSet(x='salary', y='spending', text='state', level='glyph', x_offset=-3, y_offset=5, source=cds, render_mode='canvas', text_font_size='8pt')
 p.add_layout(labels)
 
-p.square('salary', 'spending', fill_color='color', line_alpha=0, source=cds, size=12)
+p.square(x='salary', y='spending', fill_color='color', line_alpha=0, source=cds, size=12)
 
 save(p)
 
